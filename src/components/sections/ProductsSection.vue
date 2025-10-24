@@ -1,0 +1,190 @@
+<template>
+  <section class="products section">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <h2>Our Pharmaceutical Products</h2>
+        <p>Comprehensive range of high-quality pharmaceutical solutions</p>
+      </div>
+      
+      <div class="products-grid">
+        <div class="product-card fade-in-up" v-for="(product, index) in products" :key="index" :style="{ animationDelay: `${index * 0.1}s` }">
+          <div class="product-icon">{{ product.icon }}</div>
+          <h3>{{ product.title }}</h3>
+          <p>{{ product.description }}</p>
+          <div class="product-features">
+            <span class="feature" v-for="feature in product.features" :key="feature">{{ feature }}</span>
+          </div>
+          <div class="product-actions">
+            <button class="btn btn-outline">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+
+const products = ref([
+  {
+    icon: '💊',
+    title: 'Cardiovascular Medicines',
+    description: 'Advanced treatments for heart conditions and blood pressure management.',
+    features: ['FDA Approved', 'High Efficacy', 'Minimal Side Effects']
+  },
+  {
+    icon: '🧬',
+    title: 'Oncology Solutions',
+    description: 'Cutting-edge cancer treatments and supportive care medications.',
+    features: ['Targeted Therapy', 'Immunotherapy', 'Precision Medicine']
+  },
+  {
+    icon: '🦠',
+    title: 'Antibiotics & Antivirals',
+    description: 'Effective antimicrobial agents for various infectious diseases.',
+    features: ['Broad Spectrum', 'Resistance Management', 'Rapid Action']
+  },
+  {
+    icon: '🧠',
+    title: 'Neurological Treatments',
+    description: 'Specialized medications for neurological disorders and mental health.',
+    features: ['Brain-Targeted', 'Sustained Release', 'Neuroprotective']
+  },
+  {
+    icon: '🩺',
+    title: 'Diabetes Management',
+    description: 'Comprehensive diabetes care including insulin and oral medications.',
+    features: ['Glucose Control', 'Long-acting', 'Patient-Friendly']
+  },
+  {
+    icon: '💉',
+    title: 'Vaccines & Immunizations',
+    description: 'Preventive healthcare solutions for various diseases and conditions.',
+    features: ['High Potency', 'Safe & Effective', 'Long-lasting Protection']
+  }
+])
+</script>
+
+<style scoped>
+.products {
+  background-color: var(--light-gray);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.section-header h2 {
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+}
+
+.product-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.product-card h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.product-card p {
+  color: var(--text-gray);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.product-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.feature {
+  background-color: rgba(4, 60, 170, 0.1);
+  color: var(--primary-blue);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.product-actions {
+  text-align: center;
+}
+
+.btn-outline {
+  padding: 0.8rem 1.5rem;
+  font-size: 0.9rem;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .product-card {
+    padding: 1.5rem;
+  }
+  
+  .product-features {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .product-card {
+    padding: 1rem;
+  }
+  
+  .product-icon {
+    font-size: 2.5rem;
+  }
+}
+</style>
