@@ -2,6 +2,34 @@
   <section class="research section">
     <div class="container">
       <div class="section-header fade-in-up">
+            <h2>Our Services</h2> 
+        </div>
+         <div class="innovation-highlights section-header fade-in-right">
+          <div class="highlights-grid">
+            <div class="highlight-item">
+              <div class="highlight-icon">🧬</div>
+              <h4>Regulatory & Import Support</h4>
+              <p>Coordination with MOHAP/DOH for compliant product registration and import approvals.</p>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🤖</div>
+              <h4>Warehousing & Distribution</h4>
+              <p>Temperature-controlled storage and traceable order fulfillment across Oman & UAE.</p>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🔬</div>
+              <h4>Retail & Pharmacy Partnerships</h4>
+              <p>Dedicated account management and on-shelf marketing support.</p>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">💊</div>
+              <h4>Private Label Development</h4>
+              <p>End-to-end support for clients seeking custom-branded health products.</p>
+            </div>
+          </div>
+        </div>
+
+      <div class="section-header fade-in-up">
         <h2>Research & Innovation</h2>
         <p>Pioneering the future of pharmaceutical science</p>
       </div>
@@ -40,31 +68,7 @@
           </div>
         </div>
         
-        <div class="innovation-highlights fade-in-right">
-          <h3>Innovation Highlights</h3>
-          <div class="highlights-grid">
-            <div class="highlight-item">
-              <div class="highlight-icon">🧬</div>
-              <h4>Gene Therapy</h4>
-              <p>Revolutionary treatments targeting genetic disorders</p>
-            </div>
-            <div class="highlight-item">
-              <div class="highlight-icon">🤖</div>
-              <h4>AI Drug Discovery</h4>
-              <p>Machine learning algorithms for faster drug development</p>
-            </div>
-            <div class="highlight-item">
-              <div class="highlight-icon">🔬</div>
-              <h4>Precision Medicine</h4>
-              <p>Personalized treatments based on genetic profiles</p>
-            </div>
-            <div class="highlight-item">
-              <div class="highlight-icon">💊</div>
-              <h4>Smart Drug Delivery</h4>
-              <p>Advanced systems for targeted medication release</p>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </div>
   </section>

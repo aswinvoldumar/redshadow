@@ -77,11 +77,11 @@
       
       <div class="footer-bottom">
         <div class="footer-bottom-content">
-          <p>&copy; 2024 RED SHADOW Pharmaceuticals. All rights reserved.</p>
+          <p>&copy; 2025 Red Shadows SPC</p>
           <div class="footer-bottom-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
+            <a href="#">Pharmacovigilance & Safety</a>
           </div>
         </div>
       </div>

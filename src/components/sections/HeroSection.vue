@@ -6,11 +6,11 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-text fade-in-up">
-          <h1>Innovating Healthcare with Trust and Precision</h1>
-          <p class="hero-subtitle">Delivering quality pharmaceuticals that improve lives</p>
+          <h1>Connecting Global Healthcare Brands to Regional Markets.</h1>
+          <p class="hero-subtitle">Trusted. Compliant. Connected.</p>
           <div class="hero-buttons">
-            <router-link to="/about" class="btn btn-primary">Learn More</router-link>
-            <router-link to="/contact" class="btn btn-accent">Contact Us</router-link>
+            <router-link to="/about" class="btn btn-primary">Explore Our Brands</router-link>
+            <router-link to="/contact" class="btn btn-accent">Become a Partner</router-link>
           </div>
         </div>
         <div class="hero-image fade-in-right">
