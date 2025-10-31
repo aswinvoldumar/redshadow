@@ -2,15 +2,7 @@
   <section class="cosmetic section">
     <div class="container">
       <div class="cosmetic-content">
-        <div class="cosmetic-text fade-in-left">
-          <span class="section-subtitle">Read about</span>
-          <h2>{{ currentProduct.title }}</h2>
-          <p class="cosmetic-description">
-            {{ currentProduct.description }}
-          </p>
-        </div>
-        
-        <div class="cosmetic-visual fade-in-right">
+        <div class="cosmetic-visual fade-in-left">
           <div class="product-showcase">
             <div class="main-product-card">
               <div class="product-image">
@@ -67,13 +59,29 @@
             </div>
           </div>
         </div>
+        
+        <div class="cosmetic-text fade-in-right">
+          <span class="section-subtitle">Read about</span>
+          <h2>{{ currentProduct.title }}</h2>
+          <p class="cosmetic-description">
+            {{ currentProduct.description }}
+          </p>
+          <ul v-if="currentProduct.bulletPoints" class="cosmetic-bullet-list">
+            <li v-for="(point, index) in currentProduct.bulletPoints" :key="index">
+              {{ point }}
+            </li>
+          </ul>
+          <p v-if="currentProduct.additionalDescription" class="cosmetic-additional-description">
+            {{ currentProduct.additionalDescription }}
+          </p>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 
 // Product data
 const products = ref([
@@ -81,9 +89,16 @@ const products = ref([
   title: 'Quality & Compliance',
   subtitle: '',
   image: 'https://www.skincenterofsouthmiami.com/wp-content/uploads/2018/06/Skin-Center-of-South-Miami-Facials-and-Skin-Care.jpg',
-  description: `We operate in line with Good Distribution Practice (GDP) and GMP sourcing standards:`
-}
-,
+  description: `We operate in line with Good Distribution Practice (GDP) and GMP sourcing standards:`,
+  bulletPoints: [
+    'Controlled temperature monitoring for all stored goods',
+    'Batch and expiry tracking (FEFO)',
+    'Supplier and customer qualification',
+    'Proper documentation for import and distribution',
+    'Ongoing staff training in product handling and hygiene'
+  ],
+  additionalDescription: 'Red Shadows is fully committed to GDP principles. Formal certification is underway as our facilities expand.'
+},
   {
     title: 'Luxury Makeup',
     subtitle: 'Professional makeup collection',
@@ -110,6 +125,22 @@ const currentProduct = computed(() => {
 const selectProduct = (index) => {
   currentProductIndex.value = index
 }
+
+// Trigger animations when elements come into view
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1'
+        entry.target.style.transform = 'translateX(0)'
+      }
+    })
+  })
+  
+  document.querySelectorAll('.cosmetic-visual, .cosmetic-text').forEach(el => {
+    observer.observe(el)
+  })
+})
 </script>
 
 <style scoped>
@@ -127,7 +158,7 @@ const selectProduct = (index) => {
 
 .cosmetic-text {
   opacity: 0;
-  transform: translateX(-30px);
+  transform: translateX(30px);
   transition: all 0.8s ease-out;
 }
 
@@ -151,12 +182,36 @@ const selectProduct = (index) => {
   color: var(--text-gray);
   font-size: 1.1rem;
   line-height: 1.7;
-  margin: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.cosmetic-bullet-list {
+  color: var(--text-gray);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 1rem 0 0 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.cosmetic-bullet-list li {
+  margin-bottom: 0.75rem;
+}
+
+.cosmetic-bullet-list li:last-child {
+  margin-bottom: 0;
+}
+
+.cosmetic-additional-description {
+  color: var(--text-gray);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 1.5rem 0 0 0;
 }
 
 .cosmetic-visual {
   opacity: 0;
-  transform: translateX(30px);
+  transform: translateX(-30px);
   transition: all 0.8s ease-out;
   position: relative;
 }
@@ -425,6 +480,16 @@ const selectProduct = (index) => {
   
   .cosmetic-description {
     font-size: 1rem;
+  }
+  
+  .cosmetic-bullet-list {
+    font-size: 1rem;
+    padding-left: 1.25rem;
+  }
+  
+  .cosmetic-additional-description {
+    font-size: 1rem;
+    margin-top: 1.25rem;
   }
   
   .product-showcase {

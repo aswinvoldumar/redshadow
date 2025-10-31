@@ -15,6 +15,9 @@
     <section id="research">
       <ResearchSection />
     </section>
+    <section id="partnership">
+      <PartnershipSection />
+    </section>
     <section id="contact">
       <ContactSection />
     </section>
@@ -27,5 +30,6 @@ import AboutSection from '../components/sections/AboutSection.vue'
 import ProductsSection from '../components/sections/ProductsSection.vue'
 import CosmeticSection from '../components/sections/CosmeticSection.vue'
 import ResearchSection from '../components/sections/ResearchSection.vue'
+import PartnershipSection from '../components/sections/PartnershipSection.vue'
 import ContactSection from '../components/sections/ContactSection.vue'
 </script>
