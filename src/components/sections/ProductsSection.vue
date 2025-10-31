@@ -2,7 +2,7 @@
   <section class="products section">
     <div class="container">
       <div class="section-header fade-in-up">
-        <h2>Our Pharmaceutical Products</h2>
+        <h2>Our Brands & Products</h2>
         <p>Comprehensive range of high-quality pharmaceutical solutions</p>
       </div>
       
@@ -29,39 +29,27 @@ import { ref } from 'vue'
 const products = ref([
   {
     icon: '💊',
-    title: 'Cardiovascular Medicines',
-    description: 'Advanced treatments for heart conditions and blood pressure management.',
-    features: ['FDA Approved', 'High Efficacy', 'Minimal Side Effects']
+    title: 'Senzicare',
+    description: 'Innovative hygiene and menstrual health products designed with comfort and safety in mind.',
+    features: ['Senziwash Women’s Intimate Wash', 'Leo Men’s Intimate Wash', 'Trucup Menstrual Cup','Sterilizer Cup','Reusable Period Panties']
   },
   {
     icon: '🧬',
-    title: 'Oncology Solutions',
-    description: 'Cutting-edge cancer treatments and supportive care medications.',
-    features: ['Targeted Therapy', 'Immunotherapy', 'Precision Medicine']
+    title: 'Baby First ',
+    description: 'Gentle daily-care range formulated for sensitive infant skin.',
+    features: ['Baby Moisturising Lotion', 'Multi-Vita Baby Oil', 'Daily Wash & Shampoo','Eczema Relief Cream (Urea 6 %)','Nappy Cream']
   },
   {
     icon: '🦠',
-    title: 'Antibiotics & Antivirals',
-    description: 'Effective antimicrobial agents for various infectious diseases.',
-    features: ['Broad Spectrum', 'Resistance Management', 'Rapid Action']
+    title: ' Phyto Paris',
+    description: 'A renowned professional hair-care brand blending botanicals with clinical expertise.',
+    features: ['Phytocyane Anti-Hair Loss Treatments (Men & Women)', 'Softness, Volume & Colour-Care Ranges', 'Professional Hair Color Kits 1 – 9']
   },
   {
     icon: '🧠',
-    title: 'Neurological Treatments',
-    description: 'Specialized medications for neurological disorders and mental health.',
-    features: ['Brain-Targeted', 'Sustained Release', 'Neuroprotective']
-  },
-  {
-    icon: '🩺',
-    title: 'Diabetes Management',
-    description: 'Comprehensive diabetes care including insulin and oral medications.',
-    features: ['Glucose Control', 'Long-acting', 'Patient-Friendly']
-  },
-  {
-    icon: '💉',
-    title: 'Vaccines & Immunizations',
-    description: 'Preventive healthcare solutions for various diseases and conditions.',
-    features: ['High Potency', 'Safe & Effective', 'Long-lasting Protection']
+    title: 'Mustela ',
+    description: 'The global leader in baby and maternity skincare.',
+    features: ['Normal Skin Range – Gentle Cleansing Gel, Hydra Bebe Face Cream, Massage Oil', 'Dry & Atopic Skin Care – Stelatopia range', 'Very Sensitive Skin & Sun Care – SPF 50 Lotions, Soothing Creams','Maternity Range – Stretch Marks Prevention Cream, Nursing Comfort Balm']
   }
 ])
 </script>

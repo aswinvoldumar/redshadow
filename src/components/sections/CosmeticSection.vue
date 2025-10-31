@@ -77,12 +77,13 @@ import { ref, computed } from 'vue'
 
 // Product data
 const products = ref([
-  {
-    title: 'Premium Skincare',
-    subtitle: 'Advanced skincare solutions',
-    image: 'https://www.skincenterofsouthmiami.com/wp-content/uploads/2018/06/Skin-Center-of-South-Miami-Facials-and-Skin-Care.jpg',
-    description: 'Our premium skincare line combines cutting-edge technology with natural ingredients to deliver exceptional results. From anti-aging serums to hydrating moisturizers, our products are formulated to address all your skincare needs. Experience the difference with our clinically tested formulas that promote healthy, radiant skin.'
-  },
+{
+  title: 'Quality & Compliance',
+  subtitle: '',
+  image: 'https://www.skincenterofsouthmiami.com/wp-content/uploads/2018/06/Skin-Center-of-South-Miami-Facials-and-Skin-Care.jpg',
+  description: `We operate in line with Good Distribution Practice (GDP) and GMP sourcing standards:`
+}
+,
   {
     title: 'Luxury Makeup',
     subtitle: 'Professional makeup collection',

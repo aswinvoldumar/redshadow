@@ -4,7 +4,7 @@
       <div class="nav-content">
         <div class="logo">
           <router-link to="/" class="logo-link">
-            <img src="/src/assets/logo red.png" alt="RED SHADOW Pharmaceuticals" class="logo-image">
+            <img src="/src/assets/logo red.png" alt="Red Shadows SPC | Pharmaceutical & Healthcare Products Distributor" class="logo-image">
             
           </router-link>
         </div>
@@ -12,9 +12,9 @@
         <div class="nav-menu" :class="{ 'active': isMenuOpen }">
           <a href="#home" class="nav-link" :class="{ 'active': isActive('#home') }" @click="closeMenu">Home</a>
           <a href="#about" class="nav-link" :class="{ 'active': isActive('#about') }" @click="closeMenu">About</a>
-          <a href="#products" class="nav-link" :class="{ 'active': isActive('#products') }" @click="closeMenu">Products</a>
-          <a href="#cosmetic" class="nav-link" :class="{ 'active': isActive('#cosmetic') }" @click="closeMenu">Cosmetic</a>
-          <a href="#research" class="nav-link" :class="{ 'active': isActive('#research') }" @click="closeMenu">Research</a>
+          <a href="#products" class="nav-link" :class="{ 'active': isActive('#products') }" @click="closeMenu">Brands</a>
+          <a href="#cosmetic" class="nav-link" :class="{ 'active': isActive('#cosmetic') }" @click="closeMenu">Quality</a>
+          <a href="#research" class="nav-link" :class="{ 'active': isActive('#research') }" @click="closeMenu">Services</a>
           <a href="#contact" class="nav-link" :class="{ 'active': isActive('#contact') }" @click="closeMenu">Contact</a>
         </div>
         

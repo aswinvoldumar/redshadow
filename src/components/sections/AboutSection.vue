@@ -3,45 +3,24 @@
     <div class="container">
       <div class="about-content">
         <div class="about-text fade-in-left">
-          <h2>About RED SHADOW Pharmaceuticals</h2>
-          <p class="lead">We are committed to advancing healthcare through innovative pharmaceutical solutions that improve patient outcomes and quality of life.</p>
+          <h2>About Us</h2>
+          <p class="vision">Red Shadows SPC is a licensed healthcare and pharmaceutical distribution company committed to improving access to trusted, high-quality wellness products across the Middle East.
+          </p> 
+          <p class="vision">
+          We specialize in the import, marketing, and distribution of dermo-cosmetics, baby care, feminine hygiene, and OTC wellness brands — including our own regional labels such as Senzicare and Baby First, alongside globally recognized partners like Phyto Paris and Mustela France.
+          </p>
+          <p class="vision">
+          From regulatory approvals to last-mile delivery, every aspect of our operation is managed with precision, transparency, and compliance. Our processes follow Good Distribution Practice (GDP) standards to ensure that all products are stored, handled, and transported under controlled and traceable conditions.
+          </p>
           
           <div class="mission-vision">
             <div class="mission">
               <h3>Our Mission</h3>
-              <p>To develop and deliver high-quality pharmaceutical products that address unmet medical needs while maintaining the highest standards of safety and efficacy.</p>
+              <p>Our mission is to bridge global healthcare brands with regional markets — empowering pharmacies, hospitals, and retailers to offer safe, effective, and reliable products to their customers.
+            </p>
             </div>
+
             
-            <div class="vision">
-              <h3>Our Vision</h3>
-              <p>To be a global leader in pharmaceutical innovation, recognized for our commitment to excellence, integrity, and improving human health worldwide.</p>
-            </div>
-          </div>
-          
-          <div class="values">
-            <h3>Our Values</h3>
-            <div class="values-grid">
-              <div class="value-item">
-                <div class="value-icon">🔬</div>
-                <h4>Innovation</h4>
-                <p>Continuous research and development</p>
-              </div>
-              <div class="value-item">
-                <div class="value-icon">🛡️</div>
-                <h4>Trust</h4>
-                <p>Reliable and safe products</p>
-              </div>
-              <div class="value-item">
-                <div class="value-icon">🎯</div>
-                <h4>Excellence</h4>
-                <p>Highest quality standards</p>
-              </div>
-              <div class="value-item">
-                <div class="value-icon">🤝</div>
-                <h4>Partnership</h4>
-                <p>Collaborative healthcare approach</p>
-              </div>
-            </div>
           </div>
         </div>
         
