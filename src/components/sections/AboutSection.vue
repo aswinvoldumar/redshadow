@@ -26,13 +26,7 @@
         
         <div class="about-image fade-in-right">
           <div class="image-container">
-            <div class="lab-visual">
-              <div class="lab-equipment">
-                <div class="microscope"></div>
-                <div class="test-tubes"></div>
-                <div class="molecular-structure"></div>
-              </div>
-            </div>
+            <img src="/src/assets/about.jpg" alt="About Red Shadows" class="about-main-image" />
           </div>
         </div>
       </div>
@@ -153,122 +147,20 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
 }
 
-.lab-visual {
-  position: relative;
+.about-main-image {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--light-gray) 0%, #e9ecef 100%);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.lab-equipment {
-  position: relative;
-  width: 200px;
-  height: 200px;
-}
-
-.microscope {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 60px;
-  background: var(--primary-blue);
-  border-radius: 5px;
-  animation: float 3s ease-in-out infinite;
-}
-
-.microscope::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  background: var(--accent-orange);
-  border-radius: 50%;
-}
-
-.test-tubes {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: 60px;
-  height: 80px;
-  background: var(--accent-orange);
-  border-radius: 5px;
-  animation: float 3s ease-in-out infinite 1s;
-}
-
-.test-tubes::before,
-.test-tubes::after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 40px;
-  background: var(--primary-blue);
-  border-radius: 2px;
-}
-
-.test-tubes::before {
-  left: 10px;
-  top: 10px;
-}
-
-.test-tubes::after {
-  right: 10px;
-  top: 10px;
-}
-
-.molecular-structure {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  width: 80px;
-  height: 80px;
-  border: 2px solid var(--primary-blue);
-  border-radius: 50%;
-  animation: rotate 10s linear infinite;
-}
-
-.molecular-structure::before,
-.molecular-structure::after {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background: var(--accent-orange);
-  border-radius: 50%;
-}
-
-.molecular-structure::before {
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.molecular-structure::after {
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-@keyframes rotate {
-  0% { transform: translateY(-50%) rotate(0deg); }
-  100% { transform: translateY(-50%) rotate(360deg); }
+.about-main-image:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {

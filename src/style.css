@@ -1,22 +1,27 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
 /* CSS Variables */
 :root {
-  --primary-blue: #043CAA;
-  --accent-orange: #FF6601;
+  --primary-teal: #4A9B8E;
+  --accent-rose: #F4A6B7;
   --white: #ffffff;
-  --light-gray: #f8f9fa;
-  --dark-gray: #333333;
-  --text-gray: #666666;
-  --border-gray: #e0e0e0;
+  --light-pastel: #F0F7F6;
+  --dark-gray: #2C3E3A;
+  --text-gray: #5A7874;
+  --border-gray: #E0E9E7;
   
-  --font-primary: 'Poppins', sans-serif;
-  --font-secondary: 'Roboto', sans-serif;
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Source Sans Pro', sans-serif;
   
   --transition: all 0.3s ease;
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+  --shadow: 0 4px 6px rgba(74, 155, 142, 0.1);
+  --shadow-hover: 0 8px 25px rgba(74, 155, 142, 0.15);
+  
+  /* Legacy color mappings for gradual transition */
+  --primary-blue: var(--primary-teal);
+  --accent-orange: var(--accent-rose);
+  --light-gray: var(--light-pastel);
 }
 
 /* Reset and Base Styles */
@@ -52,7 +57,7 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-  color: var(--primary-blue);
+  color: var(--primary-teal);
 }
 
 h3 {
@@ -79,35 +84,35 @@ p {
 }
 
 .btn-primary {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-teal);
   color: var(--white);
 }
 
 .btn-primary:hover {
-  background-color: #032a7a;
+  background-color: #3A7B70;
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
 }
 
 .btn-accent {
-  background-color: var(--accent-orange);
+  background-color: var(--accent-rose);
   color: var(--white);
 }
 
 .btn-accent:hover {
-  background-color: #e55a00;
+  background-color: #E895A6;
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--primary-blue);
-  border: 2px solid var(--primary-blue);
+  color: var(--primary-teal);
+  border: 2px solid var(--primary-teal);
 }
 
 .btn-outline:hover {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-teal);
   color: var(--white);
 }
 

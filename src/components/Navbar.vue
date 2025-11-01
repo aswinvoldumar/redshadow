@@ -113,13 +113,13 @@ const isActive = (hash) => {
 }
 
 .nav-link:hover {
-  color: var(--accent-orange);
-  background-color: rgba(255, 102, 1, 0.1);
+  color: var(--accent-rose);
+  background-color: rgba(244, 166, 183, 0.1);
 }
 
 .nav-link.active {
-  color: var(--accent-orange);
-  background-color: rgba(255, 102, 1, 0.1);
+  color: var(--accent-rose);
+  background-color: rgba(244, 166, 183, 0.1);
 }
 
 .hamburger {

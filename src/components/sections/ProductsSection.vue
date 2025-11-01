@@ -8,7 +8,6 @@
       
       <div class="products-grid">
         <div class="product-card fade-in-up" v-for="(product, index) in products" :key="index" :style="{ animationDelay: `${index * 0.1}s` }">
-          <div class="product-icon">{{ product.icon }}</div>
           <h3>{{ product.title }}</h3>
           <p>{{ product.description }}</p>
           <div class="product-features">
@@ -56,7 +55,7 @@ const products = ref([
 
 <style scoped>
 .products {
-  background-color: var(--light-gray);
+  background-color: var(--light-pastel);
 }
 
 .section-header {
@@ -98,12 +97,6 @@ const products = ref([
   box-shadow: var(--shadow-hover);
 }
 
-.product-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
 .product-card h3 {
   color: var(--primary-blue);
   margin-bottom: 1rem;
@@ -124,8 +117,8 @@ const products = ref([
 }
 
 .feature {
-  background-color: rgba(4, 60, 170, 0.1);
-  color: var(--primary-blue);
+  background-color: rgba(74, 155, 142, 0.1);
+  color: var(--primary-teal);
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -169,10 +162,6 @@ const products = ref([
   
   .product-card {
     padding: 1rem;
-  }
-  
-  .product-icon {
-    font-size: 2.5rem;
   }
 }
 </style>

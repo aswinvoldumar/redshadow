@@ -7,22 +7,22 @@
          <div class="innovation-highlights section-header fade-in-right">
           <div class="highlights-grid">
             <div class="highlight-item">
-              <div class="highlight-icon">🧬</div>
+              <div class="highlight-icon">📋</div>
               <h4>Regulatory & Import Support</h4>
               <p>Coordination with MOHAP/DOH for compliant product registration and import approvals.</p>
             </div>
             <div class="highlight-item">
-              <div class="highlight-icon">🤖</div>
+              <div class="highlight-icon">📦</div>
               <h4>Warehousing & Distribution</h4>
               <p>Temperature-controlled storage and traceable order fulfillment across Oman & UAE.</p>
             </div>
             <div class="highlight-item">
-              <div class="highlight-icon">🔬</div>
+              <div class="highlight-icon">🤝</div>
               <h4>Retail & Pharmacy Partnerships</h4>
               <p>Dedicated account management and on-shelf marketing support.</p>
             </div>
             <div class="highlight-item">
-              <div class="highlight-icon">💊</div>
+              <div class="highlight-icon">🏷️</div>
               <h4>Private Label Development</h4>
               <p>End-to-end support for clients seeking custom-branded health products.</p>
             </div>
@@ -140,7 +140,7 @@ const researchAreas = ref([
 .stat-item {
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, var(--primary-blue), #032a7a);
+  background: linear-gradient(135deg, var(--primary-teal), #3A7B70);
   color: var(--white);
   border-radius: 15px;
   transition: var(--transition);
@@ -155,7 +155,7 @@ const researchAreas = ref([
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--accent-orange);
+  color: var(--accent-rose);
 }
 
 .stat-label {
@@ -218,7 +218,7 @@ const researchAreas = ref([
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--primary-blue), var(--accent-orange));
+  background: linear-gradient(90deg, var(--primary-teal), var(--accent-rose));
   border-radius: 4px;
   transition: width 1s ease-out;
 }

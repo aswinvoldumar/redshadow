@@ -51,7 +51,7 @@ onMounted(() => {
   display: flex;
   align-items: center;
   position: relative;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, #F0F7F6 0%, #E8F5F3 100%);
   overflow: hidden;
 }
 
@@ -71,9 +71,9 @@ onMounted(() => {
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 20% 20%, rgba(4, 60, 170, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(255, 102, 1, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 60%, rgba(4, 60, 170, 0.05) 0%, transparent 50%);
+    radial-gradient(circle at 20% 20%, rgba(74, 155, 142, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(244, 166, 183, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 60%, rgba(74, 155, 142, 0.04) 0%, transparent 50%);
   animation: float 20s ease-in-out infinite;
 }
 
@@ -101,7 +101,7 @@ onMounted(() => {
 .hero-text h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  color: var(--primary-blue);
+  color: var(--primary-teal);
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -159,7 +159,7 @@ onMounted(() => {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: var(--primary-blue);
+  background: var(--primary-teal);
   border-radius: 50%;
   animation: orbit 8s linear infinite;
 }
@@ -175,7 +175,7 @@ onMounted(() => {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  background: var(--accent-orange);
+  background: var(--accent-rose);
   animation-delay: -2.67s;
 }
 
@@ -189,7 +189,7 @@ onMounted(() => {
 .bond {
   position: absolute;
   height: 2px;
-  background: linear-gradient(90deg, var(--primary-blue), var(--accent-orange));
+  background: linear-gradient(90deg, var(--primary-teal), var(--accent-rose));
   animation: pulse 2s ease-in-out infinite;
 }
 

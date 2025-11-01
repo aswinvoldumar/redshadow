@@ -44,14 +44,7 @@
         
         <div class="partnership-visual fade-in-right">
           <div class="visual-container">
-            <div class="partnership-graphic">
-              <div class="graphic-element element-1"></div>
-              <div class="graphic-element element-2"></div>
-              <div class="graphic-element element-3"></div>
-              <div class="graphic-icon icon-1">🤝</div>
-              <div class="graphic-icon icon-2">🌐</div>
-              <div class="graphic-icon icon-3">💼</div>
-            </div>
+            <img src="/src/assets/partnership.jpg" alt="Partnership" class="partnership-image" />
           </div>
         </div>
       </div>
@@ -193,109 +186,20 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
 }
 
-.partnership-graphic {
-  position: relative;
+.partnership-image {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--light-gray) 0%, #e9ecef 100%);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.graphic-element {
-  position: absolute;
-  border-radius: 10px;
-  animation: float 6s ease-in-out infinite;
-}
-
-.graphic-element.element-1 {
-  width: 100px;
-  height: 100px;
-  background: var(--primary-blue);
-  top: 20%;
-  left: 15%;
-  opacity: 0.1;
-  animation-delay: 0s;
-}
-
-.graphic-element.element-2 {
-  width: 80px;
-  height: 80px;
-  background: var(--accent-orange);
-  bottom: 25%;
-  right: 20%;
-  opacity: 0.1;
-  animation-delay: 2s;
-}
-
-.graphic-element.element-3 {
-  width: 120px;
-  height: 120px;
-  background: var(--primary-blue);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.05;
-  animation-delay: 4s;
-}
-
-.graphic-icon {
-  position: absolute;
-  font-size: 3rem;
-  animation: float 6s ease-in-out infinite;
-}
-
-.graphic-icon.icon-1 {
-  top: 30%;
-  left: 25%;
-  animation-delay: 1s;
-}
-
-.graphic-icon.icon-2 {
-  top: 50%;
-  left: 50%;
-  animation: floatCentered 6s ease-in-out infinite;
-  animation-delay: 3s;
-}
-
-@keyframes floatCentered {
-  0%, 100% {
-    transform: translate(-50%, 0px) rotate(0deg);
-  }
-  25% {
-    transform: translate(-50%, -20px) rotate(5deg);
-  }
-  50% {
-    transform: translate(-50%, -10px) rotate(-5deg);
-  }
-  75% {
-    transform: translate(-50%, -15px) rotate(3deg);
-  }
-}
-
-.graphic-icon.icon-3 {
-  bottom: 30%;
-  right: 25%;
-  animation-delay: 5s;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  25% {
-    transform: translateY(-20px) rotate(5deg);
-  }
-  50% {
-    transform: translateY(-10px) rotate(-5deg);
-  }
-  75% {
-    transform: translateY(-15px) rotate(3deg);
-  }
+.partnership-image:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 1024px) {
@@ -344,10 +248,6 @@ onMounted(() => {
   .visual-container {
     height: 350px;
   }
-  
-  .graphic-icon {
-    font-size: 2.5rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -365,10 +265,6 @@ onMounted(() => {
   
   .visual-container {
     height: 300px;
-  }
-  
-  .graphic-icon {
-    font-size: 2rem;
   }
   
   .btn-primary {

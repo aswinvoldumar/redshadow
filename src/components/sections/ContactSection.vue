@@ -67,14 +67,6 @@
               <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
             </div>
           </div>
-          
-          <div class="map-container">
-            <div class="map-placeholder">
-              <div class="map-icon">🗺️</div>
-              <p>Interactive Map</p>
-              <small>123 Pharmaceutical Avenue, Medical District</small>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -116,7 +108,7 @@ const submitForm = async () => {
 
 <style scoped>
 .contact {
-  background-color: var(--light-gray);
+  background-color: var(--light-pastel);
 }
 
 .section-header {
@@ -174,7 +166,7 @@ const submitForm = async () => {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary-blue);
-  box-shadow: 0 0 0 3px rgba(4, 60, 170, 0.1);
+  box-shadow: 0 0 0 3px rgba(74, 155, 142, 0.1);
 }
 
 .form-group textarea {
@@ -233,40 +225,6 @@ const submitForm = async () => {
   margin: 0;
 }
 
-.map-container {
-  margin-top: 2rem;
-}
-
-.map-placeholder {
-  background-color: var(--white);
-  border: 2px solid var(--border-gray);
-  border-radius: 10px;
-  padding: 3rem;
-  text-align: center;
-  box-shadow: var(--shadow);
-  transition: var(--transition);
-}
-
-.map-placeholder:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-hover);
-}
-
-.map-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.map-placeholder p {
-  color: var(--primary-blue);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.map-placeholder small {
-  color: var(--text-gray);
-}
-
 @media (max-width: 768px) {
   .contact-content {
     grid-template-columns: 1fr;
@@ -292,10 +250,6 @@ const submitForm = async () => {
   
   .info-item {
     padding: 1rem;
-  }
-  
-  .map-placeholder {
-    padding: 2rem;
   }
 }
 </style>
