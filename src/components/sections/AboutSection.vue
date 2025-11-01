@@ -26,7 +26,7 @@
         
         <div class="about-image fade-in-right">
           <div class="image-container">
-            <img src="/src/assets/about.jpg" alt="About Red Shadows" class="about-main-image" />
+            <img src="/src/assets/about.jpg" alt="About Red Shadows" class="about-main-image" loading="lazy" />
           </div>
         </div>
       </div>

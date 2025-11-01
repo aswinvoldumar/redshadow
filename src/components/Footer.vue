@@ -85,17 +85,45 @@
           </div>
         </div>
       </div>
+      
+      <!-- Scroll to Top Button -->
+      <button class="scroll-to-top" :class="{ visible: isVisible }" @click="scrollToTop" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 3L3 10H7V17H13V10H17L10 3Z" fill="currentColor"/>
+        </svg>
+      </button>
     </div>
   </footer>
 </template>
 
 <script setup>
-// Footer component logic can be added here if needed
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
+
+const isVisible = ref(false)
+
+const handleScroll = () => {
+  isVisible.value = window.scrollY > 300
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <style scoped>
 .footer {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-teal);
   color: var(--white);
   padding: 3rem 0 0;
 }
@@ -156,7 +184,7 @@
 }
 
 .social-link:hover {
-  background-color: var(--accent-orange);
+  background-color: var(--accent-rose);
   transform: translateY(-2px);
 }
 
@@ -177,7 +205,7 @@
 }
 
 .footer-links a:hover {
-  color: var(--accent-orange);
+  color: var(--accent-rose);
 }
 
 .contact-info {
@@ -229,7 +257,45 @@
 }
 
 .footer-bottom-links a:hover {
-  color: var(--accent-orange);
+  color: var(--accent-rose);
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-teal);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(74, 155, 142, 0.3);
+  transition: var(--transition);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--accent-rose);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(244, 166, 183, 0.4);
+}
+
+.scroll-to-top:focus {
+  outline: 2px solid var(--accent-rose);
+  outline-offset: 2px;
 }
 
 @media (max-width: 768px) {

@@ -44,7 +44,7 @@
         
         <div class="partnership-visual fade-in-right">
           <div class="visual-container">
-            <img src="/src/assets/partnership.jpg" alt="Partnership" class="partnership-image" />
+            <img src="/src/assets/partnership.jpg" alt="Partnership" class="partnership-image" loading="lazy" />
           </div>
         </div>
       </div>

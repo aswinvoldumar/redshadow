@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
     <Navbar />
     <router-view />
     <Footer />

@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main id="main-content">
     <section id="home">
       <HeroSection />
     </section>

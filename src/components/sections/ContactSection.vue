@@ -162,10 +162,10 @@ const submitForm = async () => {
   transition: var(--transition);
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-group input:focus-visible,
+.form-group textarea:focus-visible {
   outline: none;
-  border-color: var(--primary-blue);
+  border-color: var(--primary-teal);
   box-shadow: 0 0 0 3px rgba(74, 155, 142, 0.1);
 }
 

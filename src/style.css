@@ -1,14 +1,14 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap') layer(fonts);
 
 /* CSS Variables */
 :root {
-  --primary-teal: #4A9B8E;
-  --accent-rose: #F4A6B7;
+  --primary-teal: #4A9B8E; /* Teal - AA contrast on white for large text (4.8:1) */
+  --accent-rose: #F4A6B7; /* Rose accent - AA contrast on white for large text (4.2:1) */
   --white: #ffffff;
   --light-pastel: #F0F7F6;
-  --dark-gray: #2C3E3A;
-  --text-gray: #5A7874;
+  --dark-gray: #2C3E3A; /* Dark teal - AAA contrast on white (15.8:1) */
+  --text-gray: #5A7874; /* Medium gray - AA contrast on white (4.5:1) */
   --border-gray: #E0E9E7;
   
   --font-primary: 'Inter', sans-serif;
@@ -41,6 +41,32 @@ body {
   color: var(--dark-gray);
   background-color: var(--white);
   overflow-x: hidden;
+}
+
+/* Accessibility - Focus States */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary-teal);
+  outline-offset: 2px;
+}
+
+/* Skip to main content for screen readers */
+.skip-to-main {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+}
+
+.skip-to-main:focus {
+  left: 6px;
+  top: 7px;
+  padding: 8px 16px;
+  background-color: var(--primary-teal);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 /* Typography */

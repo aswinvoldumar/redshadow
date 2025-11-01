@@ -37,7 +37,7 @@
                 :class="{ 'active': currentProductIndex === 0 }"
                 @click="selectProduct(0)"
               >
-                <img src="https://www.skincenterofsouthmiami.com/wp-content/uploads/2018/06/Skin-Center-of-South-Miami-Facials-and-Skin-Care.jpg" alt="Skincare" />
+                <img src="https://www.skincenterofsouthmiami.com/wp-content/uploads/2018/06/Skin-Center-of-South-Miami-Facials-and-Skin-Care.jpg" alt="Skincare" loading="lazy" />
                 <div class="card-label">Skincare</div>
               </div>
               <div 
@@ -45,7 +45,7 @@
                 :class="{ 'active': currentProductIndex === 1 }"
                 @click="selectProduct(1)"
               >
-                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=200&h=200&fit=crop" alt="Makeup" />
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=200&h=200&fit=crop" alt="Makeup" loading="lazy" />
                 <div class="card-label">Makeup</div>
               </div>
               <div 
@@ -53,7 +53,7 @@
                 :class="{ 'active': currentProductIndex === 2 }"
                 @click="selectProduct(2)"
               >
-                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=200&h=200&fit=crop" alt="Hair Care" />
+                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=200&h=200&fit=crop" alt="Hair Care" loading="lazy" />
                 <div class="card-label">Hair Care</div>
               </div>
             </div>
